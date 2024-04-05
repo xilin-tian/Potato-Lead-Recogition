@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Potato Leaf Disease Detection</title>
+</head>
+<body>
+    <h1>Potato Leaf Disease Detection</h1>
+    <form action="{{ url_for('predict') }}" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*" required>
+        <input type="submit" value="Upload and Predict">
+    </form>
+</body>
+</html>
